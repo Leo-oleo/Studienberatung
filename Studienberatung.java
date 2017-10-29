@@ -19,6 +19,16 @@ public class Studienberatung{
 		else {
 			System.out.println("Hast du Fachabitur?");
 			antwort = tastatur.next();
+			if (antwort.equals("ja")){
+				System.out.println("Hast du eine Berufsausbildung?");
+				antwort = tastatur.next();
+					if (antwort.equals("ja")){
+						System.out.println("Du kannst ja später noch studieren");
+					}
+					else {
+						System.out.println("Besser noch studieren");
+					}
+			}
 			
 			else {
 				System.out.println("Nicht studieren");
