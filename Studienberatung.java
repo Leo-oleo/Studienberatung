@@ -5,7 +5,16 @@ public class Studienberatung{
 		Scanner tastatur = new Scanner(System.in);
 		String antwort = tastatur.next();
 		
-
+		if (antwort.equals("ja")){
+		System.out.println("Bist du wissbegierig?");
+			antwort = tastatur.next();
+		if (antwort.equals("ja")){
+				System.out.println("Auf jeden Fall studieren!");
+			}
+			else {
+				System.out.println("Nicht studieren");
+			}
+		}
 		
 		else {
 			System.out.println("Hast du Fachabitur?");
